@@ -25,8 +25,8 @@ router.get('/producto', function(req, res, next) {
   res.render('producto', { title: 'Producto' });
 });
 
-router.get('/contactenos', function(req, res, next) {
-  res.render('contactenos', { title: 'Contáctenos' });
+router.get('/contacto', function(req, res, next) {
+  res.render('contacto', { title: 'Contacto' });
 });
 
 module.exports = router;
