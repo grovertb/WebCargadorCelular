@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  .container
+    .card
+      .card-content
+        .row
+          .col.s12
+            h3.bold.center.light-blue-text= title
+          //- .row.col.s12
+            h5.bold.light-blue-text.text-darken-4 Etapa 1:
+          .cols12
+            span.bold 1.  ¿Qué opinión le merece el cargador de celulares?
+            ul
+              li  a)  Muy interesante
+              li  b)  interesante
+              li  c)  neutro 
+              li  d)  poco interesante
+              li  e)  nada interesante
+            p.bold Muestra: 10 estudiantes mayores de 18 años.
+            br
+            p.bold Fecha del sondeo: 20/09/16
+          .row.col.s12
+            table.hoverable.bordered.highlight
+              thead
+                tr
+                  th(data-field='Respuestas') Respuestas
+                  th(data-field='Votos') Votos
+                  th(data-field='Porcentaje') Porcentaje
+              tbody
+                tr
+                  td Muy Interesado
+                  td 3
+                  td 0.03
+                tr
+                  td Interesante
+                  td 6
+                  td 0.06
+                tr
+                  td Neutro
+                  td 1
+                  td 0.01
+                tr
+                  td Poco Interesante
+                  td 0
+                  td 0
+                tr
+                  td Nada Interesante
+                  td 0
+                  td 0
+          .col.s12.l6.offset-l3
+            .center-flex-p
+              .center-flex
+                img.materialboxed.responsive-img(src="/_img/grafica.png")

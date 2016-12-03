@@ -2,7 +2,95 @@ doctype html
 html
   head
     title= title
-link(rel='stylesheet', href='/_css/materialize.min.css')sssss
-link(rel='stylesheet', href='/_css/style.css')
+    link(rel='stylesheet', href='/_css/icons.css')
+    link(rel='stylesheet', href='/_css/materialize.min.css')
+    link(rel='stylesheet', href='/_css/base.css')
+    link(rel='stylesheet', href='/_css/style.css')
   body
-    block content
+    header
+      nav.indigo
+        .contentnav.nav-wrapper
+          a.brand-logo.bold(href='/') Cargador de Celular
+          a.button-collapse(href='#', data-activates='mobile-demo')
+            i.material-icons menu
+          ul#mobile-demo.side-nav
+            li
+              a(href='/') Inicio
+            li
+              a(href='/nosotros') Nosotros
+            li
+              a(href='/producto') Producto
+            li.no-padding
+              ul.collapsible.collapsible-accordion
+                li
+                  a.collapsible-header
+                    | Etapas
+                    i.material-icons arrow_drop_down
+                  .collapsible-body
+                    ul
+                      li
+                        a(href='/etapa1') Etapa 1
+                      li
+                        a(href='/etapa2') Etapa 2
+                      li
+                        a(href='/etapa3') Etapa 3
+          ul.right.hide-on-med-and-down
+            li
+              a(href='/') Inicio
+            li
+              a(href='/nosotros') Nosotros
+            li
+              a(href='/producto') Producto
+            li
+              a.dropdown-button(href='#!', data-activates='dropdown1')
+                | Etapas
+                i.material-icons.right arrow_drop_down
+            ul#dropdown1.dropdown-content
+              li
+                a.indigo-text(href='/etapa1') Etapa 1
+              li
+                a.indigo-text(href='/etapa2') Etapa 2
+              li
+                a.indigo-text(href='/etapa3') Etapa 3
+          //- ul.right.hide-on-med-and-down
+            li
+              a(href='/nosotros') Nosotros
+            li
+              a(href='/etapas') Etapas
+            li
+              a(href='/producto') Producto
+            li
+              a(href='/contactenos') Contáctenos
+            li.no-padding
+              ul.collapsible.collapsible-accordion
+                li
+                  a.collapsible-header
+                    | Dropdown
+                    i.material-icons arrow_drop_down
+                  .collapsible-body
+                    ul
+                      li
+                        a(href='#!') First
+                      li
+                        a(href='#!') Second
+                      li
+                        a(href='#!') Third
+                      li
+                        a(href='#!') Fourth
+          //- ul#mobile-demo.side-nav
+            li
+              a(href='/nosotros') Nosotros
+            li
+              a(href='/etapas') Etapas
+            li
+              a(href='/producto') Producto
+            li
+              a(href='/contactenos') Contáctenos
+    main
+      block content
+    //- footer
+      block fotter
+    block library
+        script(src='/_js/jquery.min.js')
+        script(src='/_js/materialize.min.js')
+        script(src='/_js/funciones.js')
