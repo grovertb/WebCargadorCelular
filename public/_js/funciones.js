@@ -6,7 +6,7 @@ $(function(){
       draggable: true // Choose whether you can drag to open on touch screens
     }
   );
-  $('.slider').slider({full_width: true,indicators:false});
+  $('.slider').slider({full_width: true,indicators:true,height:500});
   $('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
